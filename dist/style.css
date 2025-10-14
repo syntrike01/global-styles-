@@ -12,9 +12,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: hsl(0, 0%, 13%);
-  color: hsl(0, 0%, 100%);
+  font-family: "Source Sans 3", sans-serif;
+  background-color: var(--main-bg);
+  color: var(--text-dark);
 }
 
 h1,
@@ -31,4 +31,9 @@ p {
 
 a, a:visited, a:active {
   text-decoration: none;
+}
+
+:root {
+  --main-bg: hsl(0, 0%, 100%);
+  --text-dark: hsl(233, 14%, 25%);
 }/*# sourceMappingURL=style.css.map */
