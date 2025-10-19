@@ -1,3 +1,5 @@
+@use '../util/' as u;
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -10,7 +12,7 @@
   /* if the width of the device is less than 1000px then width will take 100% of the device and if it is greater than 1000px then the width will take 1000px */
   margin-inline: auto;
 
-  @media (min-width: 900px) {
+  @include u.breakpoint(large) {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
   }
