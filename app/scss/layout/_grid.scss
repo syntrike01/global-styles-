@@ -4,7 +4,13 @@
   grid-template-rows: auto auto;
   gap: 40px;
 
-  @media (min-width: 900px){
+  //   max-width: 1000px;
+
+  width: min(100% - 40px, 1000px);
+  /* if the width of the device is less than 1000px then width will take 100% of the device and if it is greater than 1000px then the width will take 1000px */
+  margin-inline: auto;
+
+  @media (min-width: 900px) {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
   }

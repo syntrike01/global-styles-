@@ -12,7 +12,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Source Sans 3", sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
   background-color: var(--main-bg);
   color: var(--text-dark);
 }
@@ -29,7 +29,9 @@ p {
   margin-top: 0;
 }
 
-a, a:visited, a:active {
+a,
+a:visited,
+a:active {
   text-decoration: none;
 }
 
@@ -43,6 +45,9 @@ a, a:visited, a:active {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   gap: 40px;
+  width: min(100% - 40px, 1000px);
+  /* if the width of the device is less than 1000px then width will take 100% of the device and if it is greater than 1000px then the width will take 1000px */
+  margin-inline: auto;
 }
 @media (min-width: 900px) {
   .grid {
@@ -50,7 +55,8 @@ a, a:visited, a:active {
     grid-template-rows: auto;
   }
 }
-.grid__main, .grid__sidepar {
+.grid__main,
+.grid__sidepar {
   padding: 40px;
 }
 .grid__main {
@@ -58,4 +64,4 @@ a, a:visited, a:active {
 }
 .grid__sidebar {
   background-color: magenta;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
